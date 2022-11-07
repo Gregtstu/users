@@ -1,0 +1,24 @@
+.container-fl {
+  max-width: 550px;
+  margin: 0 auto;
+
+  button:disabled{
+    cursor: not-allowed;
+  }
+  .container-cards {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .card-mini {
+      width: 260px;
+
+      .btn-crd-mini {
+        padding: 5px 50px;
+        margin-left: 50px;
+      }
+    }
+  }
+}

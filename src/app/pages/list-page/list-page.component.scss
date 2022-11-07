@@ -1,0 +1,32 @@
+.container-fl {
+  border: 2px solid black;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
+    .nav-item {
+      width: 25%;
+
+      .nav-link {
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-top-left-radius: 15%;
+        border-top-right-radius: 15%;
+      }
+
+      .nav-link:hover {
+        border-top-left-radius: 15%;
+        border-top-right-radius: 15%;
+        background-color: #79797c;
+        cursor: pointer;
+      }
+
+      .nav-link.active {
+        background-color: #79797c;
+      }
+    }
+  }
+}
