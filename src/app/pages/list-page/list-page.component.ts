@@ -14,7 +14,7 @@ import {SortingService} from "../../settings/services/sorting.service";
 export class ListPageComponent implements OnInit {
 
   public users: IUsers[] = [];
-  public type: string = 'income';
+  public type: string = '';
 
   constructor(
     private apiServ: ApiService,
@@ -24,6 +24,7 @@ export class ListPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAllUsers();
+    this.type = this.sortingServ.getType();
   }
 
   getAllUsers(): void {

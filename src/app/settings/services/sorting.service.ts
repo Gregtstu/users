@@ -5,11 +5,15 @@ import { Injectable } from '@angular/core';
 })
 export class SortingService {
 
-  public type: string = 'icome';
+  public type: string = 'income';
 
   constructor() { }
 
   setType(type:string){
     this.type = type;
+  }
+
+  getType(){
+    return this.type
   }
 }
