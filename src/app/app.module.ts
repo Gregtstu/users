@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListPageComponent } from './pages/list-page/list-page.component';
 import { SummaryPageComponent } from './pages/summary-page/summary-page.component';
+import {HttpClientModule} from "@angular/common/http";
+import { SortingTypePipe } from './settings/pipes/sorting-type.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListPageComponent,
-    SummaryPageComponent
+    SummaryPageComponent,
+    SortingTypePipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

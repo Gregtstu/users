@@ -4,39 +4,40 @@
     <div class="card-body">
       <h5 class="card-title col-6 text-right">Welcome</h5>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <button class="btn btn-primary" (click)="flagContainer = !flagContainer" [disabled]="flagContainer" >See transactions</button>
+      <button class="btn btn-primary" (click)="flagContainer = !flagContainer" [disabled]="flagContainer">See
+        transactions
+      </button>
     </div>
-    <div class="card-footer font-weight-bold">You have ..... transactions</div>
+    <div class="card-footer font-weight-bold">You have {{users.length}} transactions</div>
   </div>
   <div class="container-cards" *ngIf="flagContainer">
     <div class="card card-mini">
       <div class="card-body">
         <h5 class="card-title text-left">123</h5>
         <p class="card-text">income</p>
-        <button class="btn btn-primary btn-crd-mini">See all</button>
+        <button class="btn btn-primary btn-crd-mini" [routerLink]="['/list']">See all</button>
       </div>
     </div>
     <div class="card card-mini">
       <div class="card-body">
-        <h5 class="card-title text-left">123</h5>
-        <p class="card-text">income</p>
-        <button class="btn btn-primary btn-crd-mini">See all</button>
+        <h5 class="card-title text-left">234</h5>
+        <p class="card-text">invenstments</p>
+        <button class="btn btn-primary btn-crd-mini" [routerLink]="['/list']">See all</button>
       </div>
     </div>
     <div class="card card-mini">
       <div class="card-body">
-        <h5 class="card-title text-left">123</h5>
-        <p class="card-text">income</p>
-        <button class="btn btn-primary btn-crd-mini">See all</button>
+        <h5 class="card-title text-left">345</h5>
+        <p class="card-text">Outcome</p>
+        <button class="btn btn-primary btn-crd-mini" [routerLink]="['/list']">See all</button>
       </div>
     </div>
     <div class="card card-mini">
       <div class="card-body">
-        <h5 class="card-title text-left">123</h5>
-        <p class="card-text">income</p>
-        <button class="btn btn-primary btn-crd-mini">See all</button>
+        <h5 class="card-title text-left">345</h5>
+        <p class="card-text">Loans</p>
+        <button class="btn btn-primary btn-crd-mini" [routerLink]="['/list']">See all</button>
       </div>
     </div>
-
   </div>
 </div>

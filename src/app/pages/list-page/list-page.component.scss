@@ -25,9 +25,10 @@
         cursor: pointer;
       }
 
-      .nav-link.active {
+     button:focus {
         background-color: #79797c;
       }
+
     }
   }
   .table-castum{
