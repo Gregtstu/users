@@ -14,7 +14,7 @@ import {SortingService} from "../../settings/services/sorting.service";
 export class ListPageComponent implements OnInit {
 
   public users: IUsers[] = [];
-  public type: string = 'investment';
+  public type: string = 'income';
 
   constructor(
     private apiServ: ApiService,

@@ -1,16 +1,16 @@
 <div class="container-fl col-7 m-auto px-2 pt-1">
     <ul class="nav nav-tabs card-header-tabs p-0 text-center">
       <li class="nav-item" >
-        <a class="nav-link" (click)="setType('income')">Icome</a>
+        <a class="nav-link" (click)="setType('income')" [ngStyle]="{background: (type === 'income') ? '#79797c' : 'white'}" >Icome</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" (click)="setType('outcome')">Outcome</a>
+        <a class="nav-link" (click)="setType('outcome')" [ngStyle]="{background: (type === 'outcome') ? '#79797c' : 'white'}" >Outcome</a>
       </li>
       <li class="nav-item" >
-        <a class="nav-link"  (click)="setType('loan')">Loans</a>
+        <a class="nav-link"  (click)="setType('loan')" [ngStyle]="{background: (type === 'loan') ? '#79797c' : 'white'}" >Loans</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" (click)="setType('investment')">Invenstments</a>
+        <a class="nav-link" (click)="setType('investment')" [ngStyle]="{background: (type === 'investment') ? '#79797c' : 'white'}" >Invenstments</a>
       </li>
     </ul>
   <div class="card-body">
