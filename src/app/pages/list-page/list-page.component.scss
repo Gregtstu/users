@@ -1,5 +1,6 @@
 .container-fl {
   border: 2px solid black;
+  font-size: 30px;
 
   .nav {
     display: flex;
@@ -29,4 +30,13 @@
       }
     }
   }
+  .table-castum{
+    width: 100%;
+    margin-top: 50px;
+
+    tr{
+      border-bottom: 1px solid black;
+    }
+  }
 }
+
